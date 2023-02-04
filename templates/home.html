@@ -18,20 +18,32 @@
 
         <!-- Main Input For Receiving Query to our ML -->
         <form action="{{ url_for('predict')}}" method="post">
-            <input type="text" name="CRIM" placeholder="CRIM" required="required" /><br>
-            <input type="text" name="ZN" placeholder="ZN" required="required" /><br>
-            <input type="text" name="INDUS" placeholder="INDUS" required="required" /><br>
-            <input type="text" name="CHAS" placeholder="CHAS" required="required" /><br>
-            <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
-            <input type="text" name="RM" placeholder="RM" required="required" /><br>
-            <input type="text" name="Age" placeholder="Age" required="required" /><br>
-            <input type="text" name="DIS" placeholder="DIS" required="required" /><br>
-            <input type="text" name="RAD" placeholder="RAD" required="required" /><br>
-            <input type="text" name="TAX" placeholder="TAX" required="required" /><br>
-            <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required" /><br>
-            <input type="text" name="B" placeholder="B" required="required" /><br>
-            <input type="text" name="LSTAT" placeholder="LSTAT" required="required" /><br>
-
+            <label for="CRIM">Per capita Crime Rate in Boston</label>
+            <input type="text" name="CRIM" required="required" /><br>
+            <label for="ZN">proportion of residential land zoned for lots</label>
+            <input type="text" name="ZN" required="required" /><br>
+            <label for="INDUS">proportion of non-retail business acres per town</label>
+            <input type="text" name="INDUS" required="required" /><br>
+            <label for="CHAS">Charles River dummy variable</label>
+            <input type="text" name="CHAS" required="required" /><br>
+            <label for="NOX">nitric oxides concentration</label>
+            <input type="text" name="NOX" required="required" /><br>
+            <label for="RM">average number of rooms per dwelling</label>
+            <input type="text" name="RM" required="required" /><br>
+            <label for="Age">proportion of owner-occupied units built prior to 1940</label>
+            <input type="text" name="Age" required="required" /><br>
+            <label for="DIS">weighted distances to five Boston employment centres</label>
+            <input type="text" name="DIS" required="required" /><br>
+            <label for="RAD">index of accessibility to radial highways</label>
+            <input type="text" name="RAD" required="required" /><br>
+            <label for="TAX">full-value property-tax rate per $10,000</label>
+            <input type="text" name="TAX" required="required" /><br>
+            <label for="PTRATIO">pupil-teacher ratio by town</label>
+            <input type="text" name="PTRATIO" required="required" /><br>
+            <label for="B">1000(Bk - 0.63)^2 where Bk is the proportion of black people by town</label>
+            <input type="text" name="B" required="required" /><br>
+            <label for="LSTAT">% lower status of the population</label>
+            <input type="text" name="LSTAT" required="required" /><br>
 
 
             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
